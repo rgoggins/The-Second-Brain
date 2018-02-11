@@ -1,0 +1,25 @@
+//
+//  ViewController.swift
+//  The Second Brain
+//
+//  Created by Ryan Goggins on 2/11/18.
+//  Copyright © 2018 Ryan Goggins. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
