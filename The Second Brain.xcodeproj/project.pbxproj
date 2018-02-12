@@ -14,6 +14,8 @@
 		B8F78E472030D1390070DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */; };
 		B8F78E522030D1390070DC45 /* The_Second_BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E512030D1390070DC45 /* The_Second_BrainTests.swift */; };
 		B8F78E5D2030D1390070DC45 /* The_Second_BrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E5C2030D1390070DC45 /* The_Second_BrainUITests.swift */; };
+		B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */; };
+		B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B8F78E582030D1390070DC45 /* The Second BrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Second BrainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F78E5C2030D1390070DC45 /* The_Second_BrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Second_BrainUITests.swift; sourceTree = "<group>"; };
 		B8F78E5E2030D1390070DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewDataSource.swift; sourceTree = "<group>"; };
+		B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				B8F78E3C2030D1390070DC45 /* AppDelegate.swift */,
 				B8F78E3E2030D1390070DC45 /* ViewController.swift */,
+				B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */,
+				B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */,
 				B8F78E402030D1390070DC45 /* Main.storyboard */,
 				B8F78E432030D1390070DC45 /* Assets.xcassets */,
 				B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F78E3F2030D1390070DC45 /* ViewController.swift in Sources */,
+				B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */,
 				B8F78E3D2030D1390070DC45 /* AppDelegate.swift in Sources */,
+				B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
