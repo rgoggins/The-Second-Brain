@@ -10,29 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapHandler = UITapGestureRecognizer(target: self, action: Selector("respond"))
+        _ = UITapGestureRecognizer(target: self, action: Selector(("respond")))
         
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture:"))
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
-        self.view.addGestureRecognizer(swipeRight)
         
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture:"))
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
         swipeDown.direction = UISwipeGestureRecognizerDirection.down
-        self.view.addGestureRecognizer(swipeDown)
+
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.left
         
-        print("going")
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.up
+        
+        self.view.gestureRecognizers = [swipeRight, swipeDown, swipeLeft, swipeUp]
+
+        
     }
     
-    func respondToSwipeGesture(_ gesture: UIGestureRecognizer) -> Void {
+    @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer) -> Void {
         
         print("actually entered into respond to swipe gesture stack")
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
             
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
