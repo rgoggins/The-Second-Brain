@@ -8,8 +8,21 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
+    //MARK: Properties
+    @IBOutlet weak var writeNotesLabel: UILabel!
+    @IBOutlet weak var notesTextField: UITextField!
+    
+    //MARK: Actions
+    @IBAction func rightSwipeRecognizer(_ sender: UISwipeGestureRecognizer) {
+        // You can add whatever you want to happen when someone swipes right here.
+    }
+    
+    @IBAction func leftSwipeRecognizer(_ sender: UISwipeGestureRecognizer) {
+        // You can add whatever you want to happen when someone swipes left here.
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
