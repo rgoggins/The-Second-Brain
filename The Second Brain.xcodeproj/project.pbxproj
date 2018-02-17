@@ -8,67 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		B8F78E3D2030D1390070DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E3C2030D1390070DC45 /* AppDelegate.swift */; };
-		B8F78E3F2030D1390070DC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E3E2030D1390070DC45 /* ViewController.swift */; };
+		B8F78E3F2030D1390070DC45 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E3E2030D1390070DC45 /* NotesVC.swift */; };
 		B8F78E422030D1390070DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E402030D1390070DC45 /* Main.storyboard */; };
 		B8F78E442030D1390070DC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E432030D1390070DC45 /* Assets.xcassets */; };
 		B8F78E472030D1390070DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */; };
-		B8F78E522030D1390070DC45 /* The_Second_BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E512030D1390070DC45 /* The_Second_BrainTests.swift */; };
-		B8F78E5D2030D1390070DC45 /* The_Second_BrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E5C2030D1390070DC45 /* The_Second_BrainUITests.swift */; };
 		B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */; };
 		B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */; };
+		E3A0818F2035D5A70044536D /* TagsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A0818E2035D5A70044536D /* TagsVC.swift */; };
+		E3A081912035D6480044536D /* NoteSentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A081902035D6480044536D /* NoteSentVC.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B8F78E4E2030D1390070DC45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8F78E312030D1380070DC45 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8F78E382030D1390070DC45;
-			remoteInfo = "The Second Brain";
-		};
-		B8F78E592030D1390070DC45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8F78E312030D1380070DC45 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8F78E382030D1390070DC45;
-			remoteInfo = "The Second Brain";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B8F78E392030D1390070DC45 /* The Second Brain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Second Brain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F78E3C2030D1390070DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8F78E3E2030D1390070DC45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8F78E3E2030D1390070DC45 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
 		B8F78E412030D1390070DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8F78E432030D1390070DC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8F78E462030D1390070DC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8F78E482030D1390070DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8F78E4D2030D1390070DC45 /* The Second BrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Second BrainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F78E512030D1390070DC45 /* The_Second_BrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Second_BrainTests.swift; sourceTree = "<group>"; };
 		B8F78E532030D1390070DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8F78E582030D1390070DC45 /* The Second BrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Second BrainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F78E5C2030D1390070DC45 /* The_Second_BrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Second_BrainUITests.swift; sourceTree = "<group>"; };
 		B8F78E5E2030D1390070DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewDataSource.swift; sourceTree = "<group>"; };
 		B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewCard.swift; sourceTree = "<group>"; };
+		E3A0818E2035D5A70044536D /* TagsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsVC.swift; sourceTree = "<group>"; };
+		E3A081902035D6480044536D /* NoteSentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B8F78E362030D1390070DC45 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8F78E4A2030D1390070DC45 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8F78E552030D1390070DC45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				B8F78E392030D1390070DC45 /* The Second Brain.app */,
-				B8F78E4D2030D1390070DC45 /* The Second BrainTests.xctest */,
-				B8F78E582030D1390070DC45 /* The Second BrainUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				B8F78E3C2030D1390070DC45 /* AppDelegate.swift */,
-				B8F78E3E2030D1390070DC45 /* ViewController.swift */,
+				B8F78E3E2030D1390070DC45 /* NotesVC.swift */,
 				B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */,
 				B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */,
 				B8F78E402030D1390070DC45 /* Main.storyboard */,
+				E3A081902035D6480044536D /* NoteSentVC.swift */,
+				E3A0818E2035D5A70044536D /* TagsVC.swift */,
 				B8F78E432030D1390070DC45 /* Assets.xcassets */,
 				B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */,
 				B8F78E482030D1390070DC45 /* Info.plist */,
@@ -151,42 +120,6 @@
 			productReference = B8F78E392030D1390070DC45 /* The Second Brain.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B8F78E4C2030D1390070DC45 /* The Second BrainTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8F78E642030D1390070DC45 /* Build configuration list for PBXNativeTarget "The Second BrainTests" */;
-			buildPhases = (
-				B8F78E492030D1390070DC45 /* Sources */,
-				B8F78E4A2030D1390070DC45 /* Frameworks */,
-				B8F78E4B2030D1390070DC45 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8F78E4F2030D1390070DC45 /* PBXTargetDependency */,
-			);
-			name = "The Second BrainTests";
-			productName = "The Second BrainTests";
-			productReference = B8F78E4D2030D1390070DC45 /* The Second BrainTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B8F78E572030D1390070DC45 /* The Second BrainUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8F78E672030D1390070DC45 /* Build configuration list for PBXNativeTarget "The Second BrainUITests" */;
-			buildPhases = (
-				B8F78E542030D1390070DC45 /* Sources */,
-				B8F78E552030D1390070DC45 /* Frameworks */,
-				B8F78E562030D1390070DC45 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8F78E5A2030D1390070DC45 /* PBXTargetDependency */,
-			);
-			name = "The Second BrainUITests";
-			productName = "The Second BrainUITests";
-			productReference = B8F78E582030D1390070DC45 /* The Second BrainUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,16 +133,6 @@
 					B8F78E382030D1390070DC45 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					B8F78E4C2030D1390070DC45 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B8F78E382030D1390070DC45;
-					};
-					B8F78E572030D1390070DC45 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B8F78E382030D1390070DC45;
 					};
 				};
 			};
@@ -227,8 +150,6 @@
 			projectRoot = "";
 			targets = (
 				B8F78E382030D1390070DC45 /* The Second Brain */,
-				B8F78E4C2030D1390070DC45 /* The Second BrainTests */,
-				B8F78E572030D1390070DC45 /* The Second BrainUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,20 +165,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8F78E4B2030D1390070DC45 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8F78E562030D1390070DC45 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,43 +172,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8F78E3F2030D1390070DC45 /* ViewController.swift in Sources */,
+				E3A081912035D6480044536D /* NoteSentVC.swift in Sources */,
+				B8F78E3F2030D1390070DC45 /* NotesVC.swift in Sources */,
+				E3A0818F2035D5A70044536D /* TagsVC.swift in Sources */,
 				B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */,
 				B8F78E3D2030D1390070DC45 /* AppDelegate.swift in Sources */,
 				B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8F78E492030D1390070DC45 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8F78E522030D1390070DC45 /* The_Second_BrainTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8F78E542030D1390070DC45 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8F78E5D2030D1390070DC45 /* The_Second_BrainUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B8F78E4F2030D1390070DC45 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8F78E382030D1390070DC45 /* The Second Brain */;
-			targetProxy = B8F78E4E2030D1390070DC45 /* PBXContainerItemProxy */;
-		};
-		B8F78E5A2030D1390070DC45 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8F78E382030D1390070DC45 /* The Second Brain */;
-			targetProxy = B8F78E592030D1390070DC45 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B8F78E402030D1390070DC45 /* Main.storyboard */ = {
@@ -458,68 +338,6 @@
 			};
 			name = Release;
 		};
-		B8F78E652030D1390070DC45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "The Second BrainTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "practice.The-Second-BrainTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Second Brain.app/The Second Brain";
-			};
-			name = Debug;
-		};
-		B8F78E662030D1390070DC45 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "The Second BrainTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "practice.The-Second-BrainTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Second Brain.app/The Second Brain";
-			};
-			name = Release;
-		};
-		B8F78E682030D1390070DC45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "The Second BrainUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "practice.The-Second-BrainUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "The Second Brain";
-			};
-			name = Debug;
-		};
-		B8F78E692030D1390070DC45 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "The Second BrainUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "practice.The-Second-BrainUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "The Second Brain";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -537,24 +355,6 @@
 			buildConfigurations = (
 				B8F78E622030D1390070DC45 /* Debug */,
 				B8F78E632030D1390070DC45 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8F78E642030D1390070DC45 /* Build configuration list for PBXNativeTarget "The Second BrainTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8F78E652030D1390070DC45 /* Debug */,
-				B8F78E662030D1390070DC45 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8F78E672030D1390070DC45 /* Build configuration list for PBXNativeTarget "The Second BrainUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8F78E682030D1390070DC45 /* Debug */,
-				B8F78E692030D1390070DC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
