@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--NotesVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Second_Brain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="NotesVC" customModule="The_Second_Brain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,11 +33,16 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lB0-Jn-soh">
                                         <rect key="frame" x="0.0" y="26.5" width="375" height="608.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="9DC-xX-X6u" appends="YES" id="Baj-fF-aWx"/>
+                                        </connections>
                                     </textView>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="mgL-A4-4eF" firstAttribute="top" secondItem="h12-1b-sAm" secondAttribute="top" id="Jnw-0z-rfq"/>
                                     <constraint firstItem="lB0-Jn-soh" firstAttribute="top" secondItem="mgL-A4-4eF" secondAttribute="bottom" id="jmh-Vd-bmP"/>
@@ -54,28 +59,142 @@
                             <constraint firstItem="h12-1b-sAm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="suV-Cc-HHr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Jdx-Su-utT" appends="YES" id="jNT-aB-nxG"/>
-                            <outletCollection property="gestureRecognizers" destination="3Vm-iJ-QY8" appends="YES" id="joe-oM-MZO"/>
-                        </connections>
                     </view>
                     <connections>
+                        <outlet property="notesTextView" destination="lB0-Jn-soh" id="SI2-1V-3Bz"/>
                         <outlet property="writeNotesLabel" destination="mgL-A4-4eF" id="1T2-tN-aie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Jdx-Su-utT">
+                <swipeGestureRecognizer direction="right" id="9DC-xX-X6u">
                     <connections>
-                        <action selector="rightSwipeRecognizer:" destination="BYZ-38-t0r" id="sEL-fA-0mq"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="3Vm-iJ-QY8">
-                    <connections>
-                        <action selector="leftSwipeRecognizer:" destination="BYZ-38-t0r" id="mYm-w7-JWC"/>
+                        <action selector="rightSwipeRecognizer:" destination="BYZ-38-t0r" id="3rb-hb-2VX"/>
+                        <segue destination="FUl-w6-jKA" kind="show" id="eaU-0X-sY5"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
+        <!--TagsVC-->
+        <scene sceneID="Tef-39-MkI">
+            <objects>
+                <viewController id="FUl-w6-jKA" customClass="TagsVC" customModule="The_Second_Brain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eLu-xk-9pn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-82-iRk">
+                                <rect key="frame" x="8" y="28" width="359" height="631"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add tags here (seperated by &quot;;&quot; and without spaces)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAW-m4-2dh">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="93K-4e-Ygh"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Put tags created by the user before here! I suggest a collection of boxes that change colors when you tap on them etc." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yZ6-KR-inf">
+                                        <rect key="frame" x="0.0" y="42" width="359" height="589"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Ff-82-iRk" secondAttribute="trailing" constant="8" id="OzL-gV-84e"/>
+                            <constraint firstItem="X9U-BH-IRT" firstAttribute="bottom" secondItem="8Ff-82-iRk" secondAttribute="bottom" constant="8" id="eCv-Eo-cLJ"/>
+                            <constraint firstItem="8Ff-82-iRk" firstAttribute="leading" secondItem="X9U-BH-IRT" secondAttribute="leading" constant="8" id="iWu-9I-DQe"/>
+                            <constraint firstItem="8Ff-82-iRk" firstAttribute="top" secondItem="X9U-BH-IRT" secondAttribute="top" constant="8" id="mgi-tU-qIt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X9U-BH-IRT"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fcu-5V-DGL" appends="YES" id="KfN-Yx-0I1"/>
+                            <outletCollection property="gestureRecognizers" destination="11n-zs-tqw" appends="YES" id="Y51-rA-Thm"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="tagsInputTextField" destination="ZAW-m4-2dh" id="Gdf-3Q-cDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Av-ID-CrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="fcu-5V-DGL">
+                    <connections>
+                        <action selector="rightSwipeRecognizer:" destination="FUl-w6-jKA" id="DfP-qX-aGy"/>
+                        <segue destination="g9o-zy-T10" kind="show" id="SeU-hD-MMr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="11n-zs-tqw">
+                    <connections>
+                        <action selector="leftSwipeRecognizer:" destination="FUl-w6-jKA" id="rZT-1W-OlX"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="JDc-Am-nrA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="32.833583208395808"/>
+        </scene>
+        <!--Note SentVC-->
+        <scene sceneID="icu-d9-KmZ">
+            <objects>
+                <viewController id="g9o-zy-T10" customClass="NoteSentVC" customModule="The_Second_Brain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBn-Hu-vQb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Opb-AC-vIJ">
+                                <rect key="frame" x="99.5" y="277.5" width="176.5" height="113.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDh-Zb-QQR">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="95.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to make a new note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEX-d2-c5K">
+                                        <rect key="frame" x="0.0" y="95.5" width="176.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.54916015624999992" green="0.54916015624999992" blue="0.54916015624999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lEX-d2-c5K" firstAttribute="centerX" secondItem="Opb-AC-vIJ" secondAttribute="centerX" id="orJ-fw-pHL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Opb-AC-vIJ" firstAttribute="centerY" secondItem="HBn-Hu-vQb" secondAttribute="centerY" id="aLz-vP-sv8"/>
+                            <constraint firstItem="Opb-AC-vIJ" firstAttribute="centerX" secondItem="HBn-Hu-vQb" secondAttribute="centerX" id="uz9-lW-IZd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aQR-LJ-IpK"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Aca-8n-WgK" appends="YES" id="rHE-2R-lDP"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="sentLabel" destination="YDh-Zb-QQR" id="HGM-E0-MIW"/>
+                        <outlet property="tapForNewNoteLabel" destination="lEX-d2-c5K" id="SOc-Rb-wkn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYc-mn-nEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Aca-8n-WgK">
+                    <connections>
+                        <action selector="tapRecognizer:" destination="g9o-zy-T10" id="TTq-v3-Sdd"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="exB-pY-t9d"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1461.5999999999999" y="32.833583208395808"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JDc-Am-nrA"/>
+    </inferredMetricsTieBreakers>
 </document>

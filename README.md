@@ -8,5 +8,5 @@ Currently working on: establishing a database on the application in swift; imple
 ### Required Software
 
 - <a href = "https://developer.apple.com/xcode/">xCode 9 </a>
-- <a href = "https://guides.cocoapods.org/using/getting-started.html">CocoaPods (manages iOS App Dependencies; needed for Firebase)</a>
+- <a href = "https://guides.cocoapods.org/using/getting-started.html">CocoaPods (manages iOS App Dependencies; needed for Firebase and JTAppleCalender)</a>
 - <a href = "https://firebase.google.com/">Firebase </a>
