@@ -22,6 +22,7 @@ class TagsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Load previous notes in here
     }
     
     override func didReceiveMemoryWarning() {

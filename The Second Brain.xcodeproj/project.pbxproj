@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B827F92C203A0AD200352B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B827F92B203A0AD100352B91 /* GoogleService-Info.plist */; };
 		B8F78E3D2030D1390070DC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E3C2030D1390070DC45 /* AppDelegate.swift */; };
 		B8F78E3F2030D1390070DC45 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E3E2030D1390070DC45 /* NotesVC.swift */; };
 		B8F78E422030D1390070DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E402030D1390070DC45 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B827F92B203A0AD100352B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8F78E392030D1390070DC45 /* The Second Brain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Second Brain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F78E3C2030D1390070DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F78E3E2030D1390070DC45 /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				B8F78E432030D1390070DC45 /* Assets.xcassets */,
 				B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */,
 				B8F78E482030D1390070DC45 /* Info.plist */,
+				B827F92B203A0AD100352B91 /* GoogleService-Info.plist */,
 			);
 			path = "The Second Brain";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F78E472030D1390070DC45 /* LaunchScreen.storyboard in Resources */,
+				B827F92C203A0AD200352B91 /* GoogleService-Info.plist in Resources */,
 				B8F78E442030D1390070DC45 /* Assets.xcassets in Resources */,
 				B8F78E422030D1390070DC45 /* Main.storyboard in Resources */,
 			);

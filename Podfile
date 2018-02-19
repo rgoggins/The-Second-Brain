@@ -9,7 +9,8 @@ target 'The Second Brain' do
     pod 'JTAppleCalendar', '~> 7.0'
   end
 
-  # Pods for The Second Brain
+  pod 'Firebase/Core'
+  pod 'Firebase/Database’
 
   target 'The Second BrainTests' do
     inherit! :search_paths
