@@ -1,23 +1,10 @@
-source 'https://github.com/CocoaPods/Specs.git'
- platform :ios, '10.0'
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
 
 target 'The Second Brain' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  target 'The Second Brain' do
-    pod 'JTAppleCalendar', '~> 7.0'
-  end
-
   pod 'Firebase/Core'
-  pod 'Firebase/Database’
-
-  target 'The Second BrainTests' do
-    inherit! :search_paths
-  end
-
-  target 'The Second BrainUITests' do
-    inherit! :search_paths
-  end
 
 end

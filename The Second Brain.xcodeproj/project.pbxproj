@@ -15,11 +15,14 @@
 		B8F78E472030D1390070DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */; };
 		B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */; };
 		B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */; };
+		D2A89C287401AF36DE10198D /* Pods_The_Second_Brain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E546970E5BE72B2A807B8C80 /* Pods_The_Second_Brain.framework */; };
 		E3A0818F2035D5A70044536D /* TagsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A0818E2035D5A70044536D /* TagsVC.swift */; };
 		E3A081912035D6480044536D /* NoteSentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A081902035D6480044536D /* NoteSentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93B858949851FF7A79468F78 /* Pods-The Second Brain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Second Brain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Second Brain/Pods-The Second Brain.debug.xcconfig"; sourceTree = "<group>"; };
+		A3C3C5BA2C8E86170289988F /* Pods-The Second Brain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Second Brain.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Second Brain/Pods-The Second Brain.release.xcconfig"; sourceTree = "<group>"; };
 		B827F92B203A0AD100352B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8F78E392030D1390070DC45 /* The Second Brain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Second Brain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F78E3C2030D1390070DC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewCard.swift; sourceTree = "<group>"; };
 		E3A0818E2035D5A70044536D /* TagsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsVC.swift; sourceTree = "<group>"; };
 		E3A081902035D6480044536D /* NoteSentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSentVC.swift; sourceTree = "<group>"; };
+		E546970E5BE72B2A807B8C80 /* Pods_The_Second_Brain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Second_Brain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A89C287401AF36DE10198D /* Pods_The_Second_Brain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8491016817D689F6F3A1B1CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93B858949851FF7A79468F78 /* Pods-The Second Brain.debug.xcconfig */,
+				A3C3C5BA2C8E86170289988F /* Pods-The Second Brain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1CA305C933B0EFA74133B1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E546970E5BE72B2A807B8C80 /* Pods_The_Second_Brain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8F78E302030D1380070DC45 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +78,8 @@
 				B8F78E502030D1390070DC45 /* The Second BrainTests */,
 				B8F78E5B2030D1390070DC45 /* The Second BrainUITests */,
 				B8F78E3A2030D1390070DC45 /* Products */,
+				8491016817D689F6F3A1B1CC /* Pods */,
+				A1CA305C933B0EFA74133B1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8F78E612030D1390070DC45 /* Build configuration list for PBXNativeTarget "The Second Brain" */;
 			buildPhases = (
+				37E464515B99672156E312CF /* [CP] Check Pods Manifest.lock */,
 				B8F78E352030D1390070DC45 /* Sources */,
 				B8F78E362030D1390070DC45 /* Frameworks */,
 				B8F78E372030D1390070DC45 /* Resources */,
+				053FA2E3B3CC6F5E0D58C71D /* [CP] Embed Pods Frameworks */,
+				84EBC28B1B9361B2C92DABCA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		053FA2E3B3CC6F5E0D58C71D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-The Second Brain/Pods-The Second Brain-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Second Brain/Pods-The Second Brain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37E464515B99672156E312CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Second Brain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84EBC28B1B9361B2C92DABCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Second Brain/Pods-The Second Brain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8F78E352030D1390070DC45 /* Sources */ = {
@@ -316,6 +399,7 @@
 		};
 		B8F78E622030D1390070DC45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B858949851FF7A79468F78 /* Pods-The Second Brain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +414,7 @@
 		};
 		B8F78E632030D1390070DC45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C3C5BA2C8E86170289988F /* Pods-The Second Brain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
