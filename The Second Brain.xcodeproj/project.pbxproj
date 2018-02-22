@@ -13,8 +13,6 @@
 		B8F78E422030D1390070DC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E402030D1390070DC45 /* Main.storyboard */; };
 		B8F78E442030D1390070DC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E432030D1390070DC45 /* Assets.xcassets */; };
 		B8F78E472030D1390070DC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F78E452030D1390070DC45 /* LaunchScreen.storyboard */; };
-		B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */; };
-		B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */; };
 		D2A89C287401AF36DE10198D /* Pods_The_Second_Brain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E546970E5BE72B2A807B8C80 /* Pods_The_Second_Brain.framework */; };
 		E3A0818F2035D5A70044536D /* TagsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A0818E2035D5A70044536D /* TagsVC.swift */; };
 		E3A081912035D6480044536D /* NoteSentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A081902035D6480044536D /* NoteSentVC.swift */; };
@@ -35,8 +33,6 @@
 		B8F78E532030D1390070DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8F78E5C2030D1390070DC45 /* The_Second_BrainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Second_BrainUITests.swift; sourceTree = "<group>"; };
 		B8F78E5E2030D1390070DC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewDataSource.swift; sourceTree = "<group>"; };
-		B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewCard.swift; sourceTree = "<group>"; };
 		E3A0818E2035D5A70044536D /* TagsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsVC.swift; sourceTree = "<group>"; };
 		E3A081902035D6480044536D /* NoteSentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSentVC.swift; sourceTree = "<group>"; };
 		E546970E5BE72B2A807B8C80 /* Pods_The_Second_Brain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Second_Brain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,8 +92,6 @@
 			children = (
 				B8F78E3C2030D1390070DC45 /* AppDelegate.swift */,
 				B8F78E3E2030D1390070DC45 /* NotesVC.swift */,
-				B8F78E6A2031437F0070DC45 /* SwipeableCardViewDataSource.swift */,
-				B8F78E6C203143FE0070DC45 /* SwipeableCardViewCard.swift */,
 				B8F78E402030D1390070DC45 /* Main.storyboard */,
 				E3A081902035D6480044536D /* NoteSentVC.swift */,
 				E3A0818E2035D5A70044536D /* TagsVC.swift */,
@@ -262,9 +256,7 @@
 				E3A081912035D6480044536D /* NoteSentVC.swift in Sources */,
 				B8F78E3F2030D1390070DC45 /* NotesVC.swift in Sources */,
 				E3A0818F2035D5A70044536D /* TagsVC.swift in Sources */,
-				B8F78E6D203143FE0070DC45 /* SwipeableCardViewCard.swift in Sources */,
 				B8F78E3D2030D1390070DC45 /* AppDelegate.swift in Sources */,
-				B8F78E6B2031437F0070DC45 /* SwipeableCardViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

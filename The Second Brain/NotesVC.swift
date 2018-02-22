@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NotesVC.swift
 //  The Second Brain
 //
 //  Created by Ryan Goggins on 2/11/18.
@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import Firebase
 
 
 class NotesVC: UIViewController {
     
     //MARK: Properties
     @IBOutlet weak var writeNotesLabel: UILabel!
-    @IBOutlet weak var notesTextView: UITextView!
     
+    @IBOutlet weak var textField: UITextView!
     
     //MARK: Actions
-    @IBAction func rightSwipeRecognizer(_ sender: UISwipeGestureRecognizer) {
-        // You can add whatever you want to happen when someone swipes right here.
+    
+    var ref : DatabaseReference!
+    
+    @IBAction func add(_ sender: Any) {
+        
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
         
         _ = UITapGestureRecognizer(target: self, action: Selector(("respond")))
         

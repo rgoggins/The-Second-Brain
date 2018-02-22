@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class NoteSentVC: UIViewController {
@@ -14,6 +15,8 @@ class NoteSentVC: UIViewController {
     //MARK: Properties
     @IBOutlet weak var sentLabel: UILabel!
     @IBOutlet weak var tapForNewNoteLabel: UILabel!
+    
+    
     
     //MARK: Actions
     @IBAction func tapRecognizer(_ sender: UITapGestureRecognizer) {
