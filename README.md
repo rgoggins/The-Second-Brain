@@ -24,4 +24,4 @@ To install Firebase: `npm install -g firebase-tools`
 
 ![Image of the database holding sample data:] (https://github.com/rgoggins/The-Second-Brain/blob/master/images/database.png)
 
-![Image of search page on the application:] (images/search.png)
+![Image of search page on the application:] 
