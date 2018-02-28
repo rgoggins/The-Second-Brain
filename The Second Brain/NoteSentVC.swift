@@ -32,7 +32,9 @@ class NoteSentVC: UIViewController {
                 
                 let full = String(describing: noteText) + ";" + String(describing: noteTags)
                 print(full)
-
+                
+                ref.child("All Notes").childByAutoId().setValue(noteText)
+                ref.child("All Tags").childByAutoId().setValue(noteTags)
                 ref.child("Notes;Tags").childByAutoId().setValue(full)
 
             }
