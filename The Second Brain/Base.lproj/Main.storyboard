@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--SearchVC-->
         <scene sceneID="41U-nk-jbw">
             <objects>
-                <viewController id="c0S-2e-nGV" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="c0S-2e-nGV" customClass="SearchVC" customModule="The_Second_Brain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1kJ-8F-J5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,8 +38,19 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="inputfieldaction:" destination="c0S-2e-nGV" eventType="editingDidEnd" id="XU2-xT-9HH"/>
+                                    <action selector="searchBar:" destination="c0S-2e-nGV" eventType="editingChanged" id="43Y-Bf-ZHu"/>
+                                    <action selector="searchBar:" destination="c0S-2e-nGV" eventType="touchDragEnter" id="ikg-mJ-bku"/>
+                                    <action selector="searchBar:" destination="c0S-2e-nGV" eventType="editingDidEnd" id="j8n-Lu-7n3"/>
+                                </connections>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-Ox-M1N">
+                                <rect key="frame" x="16" y="127" width="343" height="498"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -56,6 +67,10 @@
                             <outletCollection property="gestureRecognizers" destination="c6V-0K-3fd" appends="YES" id="DbC-Sb-ggf"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="tableOfEntries" destination="HYa-Ox-M1N" id="z0z-gW-Gfy"/>
+                        <outlet property="tagsInputTextField" destination="rWE-21-ym3" id="RAA-dJ-V65"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUf-fd-ffA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="c6V-0K-3fd">
@@ -131,7 +146,7 @@
         <scene sceneID="Tef-39-MkI">
             <objects>
                 <viewController id="FUl-w6-jKA" customClass="TagsVC" customModule="The_Second_Brain" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eLu-xk-9pn">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eLu-xk-9pn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

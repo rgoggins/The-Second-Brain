@@ -31,6 +31,10 @@ class NotesVC: UIViewController {
         super.viewDidLoad()
     }
     
+//    func textFieldDidBeginEditing(textField: UITextView) {
+//        textField.text = ""
+//    }
+    
     
     @IBAction func swipeRightGesture(_ sender: Any) {
         self.saveNote()

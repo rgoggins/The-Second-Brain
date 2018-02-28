@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 
 class NoteSentVC: UIViewController {
@@ -16,23 +17,30 @@ class NoteSentVC: UIViewController {
     @IBOutlet weak var sentLabel: UILabel!
     @IBOutlet weak var tapForNewNoteLabel: UILabel!
     
-    
-    
-    //MARK: Actions
-    @IBAction func tapRecognizer(_ sender: UITapGestureRecognizer) {
-    }
-    
-    
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let defaults = UserDefaults.standard
         
         if let noteText = defaults.object(forKey: "NOTE_TEXT") {
             if let noteTags = defaults.object(forKey: "NOTE_TAGS") {
-                // do something with firebase here...
+                print(noteText)
+                print(noteTags)
+                
+                var ref: DatabaseReference!
+                ref = Database.database().reference()
+                
+                let full = String(describing: noteText) + ";" + String(describing: noteTags)
+                print(full)
+
+                ref.child("Notes;Tags").childByAutoId().setValue(full)
+
             }
         }
+    }
+    
+    //MARK: Actions
+    @IBAction func tapRecognizer(_ sender: UITapGestureRecognizer) {
     }
     
     override func didReceiveMemoryWarning() {
