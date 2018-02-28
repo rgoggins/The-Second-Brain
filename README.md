@@ -10,3 +10,7 @@ Currently working on: establishing a database on the application in swift; imple
 - <a href = "https://developer.apple.com/xcode/">xCode 9 </a>
 - <a href = "https://guides.cocoapods.org/using/getting-started.html">CocoaPods (manages iOS App Dependencies; needed for Firebase and JTAppleCalender)</a>
 - <a href = "https://firebase.google.com/">Firebase </a>
+
+## Install dependencies
+To install CocoaPods: `sudo gem install cocoapods`
+To install Firebase: `npm install -g firebase-tools`
