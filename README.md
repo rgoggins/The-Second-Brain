@@ -16,12 +16,12 @@ To install Firebase: `npm install -g firebase-tools`
 
 ## Screenshots
 
-![First] (images/newnote.png)
+![First page for the user to input their note](images/newnote.png)
 
-![Second page for user to input the tags associated with their entry:](tags.png)
+![Second page for user to input the tags associated with their entry:](images/tags.png)
 
-![Third page for user to receive confirmation that their entry has been stored in the database:] (images/sent.png)
+![Third page for user to receive confirmation that their entry has been stored in the database:](images/sent.png)
 
-![Image of the database holding sample data:] (https://github.com/rgoggins/The-Second-Brain/blob/master/images/database.png)
+![Image of the database holding sample data:](images/database.png)
 
-![Image of search page on the application:] 
+![Image of search page on the application:](images/search.png)
