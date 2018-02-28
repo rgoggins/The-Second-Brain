@@ -16,12 +16,12 @@ To install Firebase: `npm install -g firebase-tools`
 
 ## Screenshots
 
-First page for the user to input their note:<img src="images/newnote.png" width="250" style="padding:1px;border:thin solid black;">
+First page for the user to input their note:<img src="images/newnote.png" width="250">
 
-![Second page for user to input the tags associated with their entry:](images/tags.png =500x250)
+Second page for user to input the tags associated with their entry: <img src="images/tags.png" width="250">
 
-![Third page for user to receive confirmation that their entry has been stored in the database:](images/sent.png =250x500)
+Third page for user to receive confirmation that their entry has been stored in the database: <img src="images/sent.png" width="250">
 
-![Image of the database holding sample data:](images/database.png)
+Image of the database holding sample data: <img src="images/database.png" width="250">
 
-![Image of search page on the application:](images/search.png)
+Image of search page on the application:<img src="images/search.png" width="250">
