@@ -16,7 +16,7 @@ To install Firebase: `npm install -g firebase-tools`
 
 ## Screenshots
 
-![First page for the user to input their note](images/newnote.png =250x250)
+![First page for the user to input their note](images/newnote.png | width=100)
 
 ![Second page for user to input the tags associated with their entry:](images/tags.png =500x250)
 
