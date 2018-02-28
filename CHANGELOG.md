@@ -1,3 +1,4 @@
+# Timeline for this Repository
 ## February 12
 - Create this repository because the previous repository that I was working out of was having difficulty handling view controller adjustments and proper formatting for a single-view based application. Add all of the starting files + add code for handling user input. I replicate all of my previous work into the new, correctly attributed XCode project.
 
