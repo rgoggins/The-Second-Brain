@@ -13,3 +13,15 @@ The application sorts entries by date, tags, and topics in a database using Goog
 ## Install dependencies
 To install CocoaPods: `sudo gem install cocoapods`
 To install Firebase: `npm install -g firebase-tools`
+
+## Screenshots
+
+First page for user to input their entry: (images/newnote.png)
+
+Second page for user to input the tags associated with their entry: (images/tags.png)
+
+Third page for user to receive confirmation that their entry has been stored in the database: (images/sent.png)
+
+Image of the database holding sample data: (images/database.png)
+
+Image of search page on the application: (images/search.png)
