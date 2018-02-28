@@ -19,7 +19,9 @@ class NotesVC: UIViewController {
     
     //MARK: Actions
     
-    var ref : DatabaseReference!
+    @IBAction func test(_ sender: Any) {
+    }
+    //    var ref : DatabaseReference!
     
     @IBAction func add(_ sender: Any) {
         
@@ -27,47 +29,17 @@ class NotesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ref = Database.database().reference()
-        
-        _ = UITapGestureRecognizer(target: self, action: Selector(("respond")))
-        
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.right
-        
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.down
-
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.left
-        
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.up
-        
-        self.view.gestureRecognizers = [swipeRight, swipeDown, swipeLeft, swipeUp]
-
-        
     }
     
-    @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer) -> Void {
-        
-        print("actually entered into respond to swipe gesture stack")
-        
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.right:
-                print("Swiped right")
-            case UISwipeGestureRecognizerDirection.down:
-                print("Swiped down")
-            case UISwipeGestureRecognizerDirection.left:
-                print("Swiped left")
-            case UISwipeGestureRecognizerDirection.up:
-                print("Swiped up")
-            default:
-                break
-            }
-        }
+    
+    @IBAction func swipeRightGesture(_ sender: Any) {
+        self.saveNote()
+        self.performSegue(withIdentifier: "showTags", sender: nil)
+    }
+    
+    func saveNote() {
+        let defaults = UserDefaults.standard
+        defaults.set(self.textField.text, forKey: "NOTE_TEXT")
     }
 
     override func didReceiveMemoryWarning() {

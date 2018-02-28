@@ -17,13 +17,21 @@ class TagsVC: UIViewController {
     
     //MARK: Actions
     @IBAction func rightSwipeRecognizer(_ sender: UISwipeGestureRecognizer) {
+        self.saveTags()
     }
+        
     @IBAction func leftSwipeRecognizer(_ sender: UISwipeGestureRecognizer) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Load previous notes in here
+    }
+    
+    func saveTags() {
+        let defaults = UserDefaults.standard
+        defaults.set(self.tagsInputTextField.text, forKey: "NOTE_TAGS")
+        self.performSegue(withIdentifier: "showSent", sender: nil)
     }
     
     override func didReceiveMemoryWarning() {
