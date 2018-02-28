@@ -44,4 +44,5 @@
 
 ## February 9
 - I work more on the view controllers that I have created, but I think that I started out the XCode project with the wrong preset classes and it would be extremely beneficial for me to transfer to the "Single-View-Application". 
+- Link to the previous repo: (https://github.com/rgoggins/Second-Brain)
 - [See top of file for the rest of the timeline]
