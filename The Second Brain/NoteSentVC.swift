@@ -24,9 +24,15 @@ class NoteSentVC: UIViewController {
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let defaults = UserDefaults.standard
         
+        if let noteText = defaults.object(forKey: "NOTE_TEXT") {
+            if let noteTags = defaults.object(forKey: "NOTE_TAGS") {
+                // do something with firebase here...
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
