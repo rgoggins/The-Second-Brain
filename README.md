@@ -17,6 +17,7 @@ To install Firebase: `npm install -g firebase-tools`
 ## Screenshots
 Image of some of the different view controllers involved in the app:
 <img src="images/newpic.png" width="400">
+\n
 
 Image of the database holding sample data: 
 <img src="images/database.png" width="400">
