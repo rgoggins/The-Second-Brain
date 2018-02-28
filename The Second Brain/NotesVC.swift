@@ -19,7 +19,7 @@ class NotesVC: UIViewController {
     
     //MARK: Actions
     
-    var ref : DatabaseReference!
+//    var ref : DatabaseReference!
     
     @IBAction func add(_ sender: Any) {
         
@@ -28,7 +28,7 @@ class NotesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref = Database.database().reference()
+//        ref = Database.database().reference()
         
         _ = UITapGestureRecognizer(target: self, action: Selector(("respond")))
         
@@ -61,13 +61,18 @@ class NotesVC: UIViewController {
             case UISwipeGestureRecognizerDirection.down:
                 print("Swiped down")
             case UISwipeGestureRecognizerDirection.left:
-                print("Swiped left")
+                self.saveNote()
             case UISwipeGestureRecognizerDirection.up:
                 print("Swiped up")
             default:
                 break
             }
         }
+    }
+    
+    func saveNote() {
+        let defaults = UserDefaults.standard
+        defaults.set(self.textField.text, forKey: "NOTE_TEXT")
     }
 
     override func didReceiveMemoryWarning() {
