@@ -56,13 +56,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW NOTE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgL-A4-4eF">
-                                <rect key="frame" x="16" y="20" width="343" height="20"/>
+                                <rect key="frame" x="16" y="40" width="343" height="20"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your note here..." translatesAutoresizingMaskIntoConstraints="NO" id="lB0-Jn-soh">
-                                <rect key="frame" x="16" y="48" width="343" height="621"/>
+                                <rect key="frame" x="16" y="68" width="343" height="599"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
@@ -77,8 +77,8 @@
                         <constraints>
                             <constraint firstItem="lB0-Jn-soh" firstAttribute="top" secondItem="mgL-A4-4eF" secondAttribute="bottom" constant="8" id="7PR-y8-qmb"/>
                             <constraint firstItem="lB0-Jn-soh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J9A-sj-JuO"/>
-                            <constraint firstItem="mgL-A4-4eF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="LeR-sa-O3h"/>
-                            <constraint firstItem="lB0-Jn-soh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-46" id="PiI-te-s5Y"/>
+                            <constraint firstItem="mgL-A4-4eF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="LeR-sa-O3h"/>
+                            <constraint firstItem="lB0-Jn-soh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-68" id="PiI-te-s5Y"/>
                             <constraint firstItem="lB0-Jn-soh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-32" id="RSf-4z-nsJ"/>
                             <constraint firstItem="mgL-A4-4eF" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="-32" id="eFE-3x-1iV"/>
                             <constraint firstItem="mgL-A4-4eF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r4o-3R-5Od"/>
@@ -109,8 +109,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag your notes here, comma separated." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3q-F9-fKw">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add tags here (seperated by &quot;;&quot; and without spaces)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZAW-m4-2dh">
-                                <rect key="frame" x="16" y="20" width="343" height="32"/>
+                                <rect key="frame" x="16" y="40" width="343" height="32"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.046875" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="93K-4e-Ygh"/>
@@ -119,12 +125,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag your notes here, comma separated." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3q-F9-fKw">
-                                <rect key="frame" x="16" y="60" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -132,8 +132,8 @@
                             <constraint firstItem="Z3q-F9-fKw" firstAttribute="width" secondItem="eLu-xk-9pn" secondAttribute="width" constant="-32" id="1u9-mJ-vlL"/>
                             <constraint firstItem="ZAW-m4-2dh" firstAttribute="centerX" secondItem="X9U-BH-IRT" secondAttribute="centerX" id="PFr-Y7-zrQ"/>
                             <constraint firstItem="Z3q-F9-fKw" firstAttribute="top" secondItem="ZAW-m4-2dh" secondAttribute="bottom" constant="8" id="RYd-2n-6Wn"/>
-                            <constraint firstItem="ZAW-m4-2dh" firstAttribute="top" secondItem="X9U-BH-IRT" secondAttribute="top" id="bHr-Rh-fWx"/>
                             <constraint firstItem="ZAW-m4-2dh" firstAttribute="width" secondItem="eLu-xk-9pn" secondAttribute="width" constant="-32" id="dvM-F5-z1Z"/>
+                            <constraint firstItem="ZAW-m4-2dh" firstAttribute="top" secondItem="X9U-BH-IRT" secondAttribute="top" constant="20" id="fbC-fi-gU6"/>
                             <constraint firstItem="Z3q-F9-fKw" firstAttribute="centerX" secondItem="X9U-BH-IRT" secondAttribute="centerX" id="mMM-70-JEQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X9U-BH-IRT"/>
@@ -213,6 +213,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="exB-pY-t9d"/>
+        <segue reference="JDc-Am-nrA"/>
     </inferredMetricsTieBreakers>
 </document>
